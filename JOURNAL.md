@@ -49,16 +49,19 @@ N/A
 
 ### Check-in 2 (end of week)
 
-**PR link:** [link to your submitted pull request]
+**PR link:** [PR #88](https://github.com/ascherj/pathreview/pull/476)
 
-**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+**Branch:** test/88-test-review-endpoint
 
 **What you built:**
-[1–3 sentences summarizing what your fix does and how it works]
+For PathReview's `/reviews` endpoint, I implemented a guard clause in the `create_review_endpoint` function within `api/routes/reviews.py`. This guard checks if the profile has any ingested documents before proceeding to create a review. If no documents are found, it returns a 400 response with a warning log stating "Profile has no ingested documents". Additionally, I created a test file `test_review_routes.py` in `tests/integration` that contains a test case `test_post_reviews_no_documents`, which simulates a POST request to the `/reviews` endpoint with a profile that has no ingested documents, and confirms that the endpoint returns the expected 400 response and logs the appropriate warning message. 
 
 **Tests added or updated:**
 [Which test files did you touch? What do they cover?]
 
-**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+- `tests/integration/test_review_routes.py`: This test file was added and contains the test case `test_post_reviews_no_documents`, which runs a POST request to the `/reviews` endpoint, confirming that the endpoint returns a 400 response and logs the warning message "Profile has no ingested documents" when the profile has no ingested documents.
 
-**Draft PR feedback received from:** [name or Slack handle, or "none"]
+
+**Self-review confirmation:** [X] make check passes  [X] make test-unit passes
+
+**Draft PR feedback received from:** none
