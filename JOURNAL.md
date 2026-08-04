@@ -65,3 +65,33 @@ For PathReview's `/reviews` endpoint, I implemented a guard clause in the `creat
 **Self-review confirmation:** [X] make check passes  [X] make test-unit passes
 
 **Draft PR feedback received from:** none
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [X] No — still awaiting review
+
+**Summary of feedback:**
+No feedback
+
+**How you responded:**
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+I found that the hardest part about open source contribution was trying to adapt your solution as you explored the codebase more. Because the codebase is large and complex, there may have been parts of the codebase that I would need to address in order to implement my solution. Furthermore, that would also introduce more contributions that weren't in the original scope of the issue.
+
+**What did you learn about working in a large codebase?**
+When contributing to other peoples codebases, it was brought to my attention how important conventions, documentation, and code readability are. In a personal project, you're essentially the only one who will be reading your code, so you can get away with a lot of things. But in a large codebase, there's things that pre-commits, linters, and code reviews that will help you catch things that you may have overlooked. Additionally, I learned that when working in a large codebase, it's important to understand the context of the code you're working on, and how it fits into the larger system. This helped me make better decisions and exercise my judgement when implementing my solution.
+
+**How did AI tools help — and where did they fall short?**
+In terms of being a first-time contributor, I found that AI tools were helpful in providing guidance and suggestions for how to approach the issue. However, when it comes to actually implementing the solution, LLMs will implement without grasping the conventions and nuances that a human developer would understand. So, while AI tools can be helpful in providing guidance and suggestions, they cannot replace the expertise and judgement of a human developer.
+
+**What would you do differently if you started over?**
+If I had the chance to start over, I would allocate more time to explore the codebase and further understand the context of the code I was working on. I feel that if I had observed more carefully on the patterns of Pathreview, I would have been able to more effectively journal and plan my solution for variables I didn't account for then. 
+
+**What are you most proud of from this module?**
+Within this module, I am most proud of being able to get my hands dirty and just experiencing the process of contributing to an open source project. Having the privlege to contribute to a project that is being used by other people is a rewarding experience, and it teaches you many lessons that you normally wouldn't learn in a personal project. 
